@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#keyboard {
+    display:flex;
+    height: 180px;
+}
+
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+}
+
+.white {
+    width: 40px;
+    height: 175px;
+    background-color: #FFFACD;
+    border:1px solid #D3D3D3;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 8px #888888;
+}
+
+.black {
+    --width:20px;
+    height: 100px;
+    background-color: black;
+    border:1px solid #D3D3D3;
+    border-top:none;
+    border-radius: 0 0 5px 5px;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 2;
+}
+
+/* .black .keyLabel {
+    color: red;
+    margin-left: 9px;
+    margin-top: 75px;
+} */
+
+.white .label {
+    margin-top: 100px;
+}
+
+.white .keyLabel {
+    padding-top: 25px;
+    margin-bottom: -15px;
+    word-spacing: 10px;
+    font-size: 14px;
+    margin-left: 13px;
+    color: blue;
+}
+
+.white .label .keySound{
+    
+    margin-left: 13px;
+    display: inline-block;
+    color:/*#66CDAA*/#585858;
+}
+
+.white .label span {
+    color: #585858;
+}
+
+.white:hover {
+    background-color: #778899;
+}
+
+.black:hover {
+    background-color:#778899;
+    opacity: 0.9;
+    
+}
+
+.black .label .keySound{
+    display: inline-block;
+    color: #00FF00;
+}
+
+
+.black .keyLabel {
+    padding-top: 25px;
+    margin-bottom: -15px;
+    word-spacing: 10px;
+    font-size: 14px;
+    margin-left: 9px;
+    color: #00FF00;
+}
+
+.black .label span {
+    color: #00FF00;
+}
+
